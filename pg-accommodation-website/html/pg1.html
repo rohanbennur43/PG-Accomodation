@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><link rel="shortcut icon" href="https://d1ksfjvcjhdtdf.cloudfront.net/sl_repo_image/assets/favicon.png"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/><script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-TZBPQTM",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer")</script><script id="_webengage_script_tag">var webengage;!function(e,n,t,o,i){function r(e,t){e[t[t.length-1]]=function(){g.__queue.push([t.join("."),arguments])}}var s,a,g=e[t],c=" ",l="init options track screen onReady".split(c),p="feedback survey notification".split(c),u="options render clear abort".split(c),w="Open Close Submit Complete View Click".split(c),f="identify login logout setAttribute".split(c);if(!g||!g.__v){for(e[t]=g={__queue:[],__v:"6.0",user:{}},s=0;s<l.length;s++)r(g,[l[s]]);for(s=0;s<p.length;s++){for(g[p[s]]={},a=0;a<u.length;a++)r(g[p[s]],[p[s],u[a]]);for(a=0;a<w.length;a++)r(g[p[s]],[p[s],"on"+w[a]])}for(s=0;s<f.length;s++)r(g.user,["user",f[s]]);setTimeout(function(){var e=n.createElement("script"),t=n.getElementById("_webengage_script_tag");e.type="text/javascript",e.async=!0,e.src=("https:"==n.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",t.parentNode.insertBefore(e,t)})}}(window,document,"webengage"),webengage.init("14507d570"),webengage.track("Page View",{source:window.location.pathname,url:window.location.href})</script><script type="module">window.onload = function () {
+      function getDocHeight() {
+        var D = document;
+        return Math.max(
+          D.body.scrollHeight, D.documentElement.scrollHeight,
+          D.body.offsetHeight, D.documentElement.offsetHeight,
+          D.body.clientHeight, D.documentElement.clientHeight
+        )
+      }
+
+      var docheight = getDocHeight()
+      var winheight, docheight, trackLength, throttlescroll
+
+      function getmeasurements() {
+        winheight = window.innerHeight || (document.documentElement || document.body).clientHeight
+        docheight = getDocHeight()
+        trackLength = docheight - winheight
+      }
+
+      function amountscrolled() {
+        var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+        var pctScrolled = Math.floor(scrollTop / trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+        return pctScrolled
+      }
+
+      getmeasurements()
+
+      window.addEventListener("resize", function () {
+        getmeasurements()
+      }, false)
+
+      window.scrollSpy = function (pageName) {
+        clearTimeout(throttlescroll)
+        throttlescroll = setTimeout(function () { // throttle code inside scroll to once every 50 milliseconds
+          if (amountscrolled() > 70) {
+            window.webengage.track('Scroll Depth', {
+              source: pageName || window.location.pathname,
+              url: window.location.href
+            })
+            window.removeEventListener('scroll', scrollSpy)
+          }
+        }, 50)
+      }
+
+      window.addEventListener("scroll", () => window.scrollSpy(), false)
+    }</script><script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@id": "https://www.stanzaliving.com/#organization",
+      "@type": "Organization",
+      "name": "Stanza Living",
+      "url": "https://www.stanzaliving.com/",
+      "logo": "https://www.stanzaliving.com/a2a322c6a5489cb6fff3fe0fd5aede14.svg",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+91-7676100700",
+        "contactType": "sales",
+        "areaServed": "IN"
+      }, {
+        "@type": "ContactPoint",
+        "telephone": "+91-8860333555",
+        "contactType": "customer support",
+        "areaServed": "IN",
+        "availableLanguage": ["EN", "HI"]
+      }],
+      "sameAs": [
+        "https://www.youtube.com/c/StanzaLiving",
+        "https://www.linkedin.com/company/stanzaliving/",
+        "https://www.facebook.com/StanzaLiving/",
+        "https://www.instagram.com/stanzaliving/"
+      ]
+    }</script><meta name="apple-mobile-web-app-title" content="Stanza Living"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="theme-color" content="#60c3ad"/><link rel="apple-touch-icon" sizes="180x180" href="/icon_180x180.8937b32017e4e18524d209744a9d7d1d.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icon_167x167.338c2113f11d0cc6d124cc39c4f3b9c3.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icon_152x152.ce07104c241bc8c2ce2a81ed4dbcb80e.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icon_120x120.49fbf15a48d764da8a86d06f96f2937e.png"/><link rel="manifest" href="/manifest.607c3e9d2fbca0807dd68e0e814705a8.json"/></head><body style="overflow-x:hidden"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZBPQTM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript><div style="font-family:Montserrat,sans-serif!important;overflow:hidden" id="app"></div><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,500" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet"><script type="text/javascript" src="/runtime~main.bcab7053a8621712ad35.js"></script><script type="text/javascript" src="/npm.core-js.366a11ee22fed78fc413.chunk.js"></script><script type="text/javascript" src="/npm.lodash.d10b62c22aa8f36feffe.chunk.js"></script><script type="text/javascript" src="/main.45c1012afd83bee3278a.chunk.js"></script></body></html>
